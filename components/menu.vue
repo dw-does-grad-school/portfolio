@@ -1,13 +1,13 @@
 <template>
-  <nav class="font-mono fixed w-full bg-white z-50">
-    <div class="max-w-7xl mx-auto px-4">
+  <nav class="font-mono fixed mt-20 w-full bg-white/90 backdrop-blur-sm z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6">
       <!-- Desktop Navigation -->
-      <div class="hidden md:flex justify-end py-4 space-x-4">
+      <div class="hidden md:flex justify-end py-6 space-x-6">
         <NuxtLink 
           v-for="item in menuItems" 
           :key="item.path"
           :to="item.path"
-          class="px-4 py-2 border border-black font-bold uppercase hover:text-pink-600 hover:border-pink-600"
+          class="px-4 py-2 font-medium uppercase tracking-wide transition-all duration-200 hover:text-pink-600 relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-pink-600 after:transition-all after:duration-200 hover:after:w-full"
         >
           {{ item.name }}
         </NuxtLink>
@@ -19,7 +19,7 @@
         <div class="flex justify-end py-4">
           <button 
             @click="toggleMenu" 
-            class="focus:outline-none"
+            class="p-2 hover:bg-gray-100 rounded-lg transition-colors duration-200"
             aria-label="Toggle menu"
           >
             <svg 
@@ -31,7 +31,7 @@
               <path 
                 stroke-linecap="round" 
                 stroke-linejoin="round" 
-                stroke-width="2" 
+                stroke-width="1.5" 
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
@@ -41,16 +41,16 @@
         <!-- Mobile Menu -->
         <div 
           :class="[
-            menuOpen ? 'max-h-[200px] border-b-4 border-black bg-white' : 'max-h-0',
+            menuOpen ? 'max-h-[200px] opacity-100' : 'max-h-0 opacity-0',
             'overflow-hidden transition-all duration-300 ease-in-out'
           ]"
         >
-          <div class="pb-4 space-y-2">
+          <div class="pb-6 space-y-3">
             <NuxtLink 
               v-for="item in menuItems" 
               :key="item.path"
               :to="item.path"
-              class="block text-right font-bold uppercase py-2 hover:text-pink-600"
+              class="block text-right py-2 px-4 font-medium uppercase tracking-wide hover:text-pink-600 transition-colors duration-200"
               @click="closeMenu"
             >
               {{ item.name }}

@@ -1,25 +1,21 @@
 <template>
-    <section class="hero mt-40 md:min-h-screen shadow-2xl bg-gradient-to-b from-base-100/50 to-base-100 w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center py-16 md:py-24">
-            <!-- Left Column -->
-            <div class="flex-1">
-                <div class="hero-content text-center mt-4 md:mt-16">
-                    <h1 class="pop-in header-text">
-                        <span class="font-bold text-5xl md:text-7xl">I'm David</span>
-                        <br>
-                        <br>
-                        <span class="focus-text block mx-auto md:mx-0 md:max-w-[80%]">
-                            I'm a software developer, and graduate student in Clemson's School of Computing. 
-                            My focus is on building scalable, interactive, and user-friendly applications that 
-                            address the issues that the people using them are facing. 
-                        </span>
-                    </h1>
-                </div>
+    <section class="hero min-h-screen shadow-2xl bg-gradient-to-b from-base-100/50 to-base-100 w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] flex items-center justify-center">
+        <div class="container relative z-10 px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="pop-in header-text">
+                    <span class="font-bold text-5xl md:text-7xl">I'm David</span>
+                    <br>
+                    <br>
+                    <span class="focus-text block mx-auto text-lg md:text-xl">
+                        I'm a full-stack developer, and part-time graduate student in Clemson University's School of Computing. 
+                        My focus is on building scalable, interactive, and user-friendly applications that 
+                        address the issues that the people using them are facing. 
+                    </span>
+                </h1>
             </div>
-            <!-- Right Column -->
-            <div class="hidden md:flex flex-1 justify-center items-center mt-16 md:mt-0">
-                <img :src="brutalcoding" alt="City Coding Image" class="coding-image" />
-            </div>
+        </div>
+        <div class="absolute inset-0 opacity-20 z-0">
+            <img :src="brutalcoding" alt="City Coding Image" class="w-full h-full object-cover" />
         </div>
     </section>
 
@@ -64,14 +60,14 @@
                     <img :src="dotted_background" alt="Dotted Background" class="dotted-image">
                     <img :src="code" alt="Code Image" class="code-image">
                     <div class="absolute top-1/2 right-0 z-10 transform -translate-y-1/2 translate-x-[60%] bg-sky-500 border border-black border-r-4 border-b-4 w-[24vh] h-[24vh] flex items-center justify-center">
-                        <NuxtLink to="/projects" class="text-white text-3xl focus-text">LEARN MORE...</NuxtLink>
+                        <NuxtLink to="/about" class="text-white text-3xl focus-text">LEARN MORE...</NuxtLink>
                     </div>
                 </div>
                 <!-- Mobile version -->
                 <div class="md:hidden relative w-[80vw] h-[60vh]">
                     <div class="absolute inset-0 bg-center bg-cover" :style="{ backgroundImage: `url(${code})` }"></div>
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-                        <NuxtLink to="/projects" class="text-white text-3xl focus-text bg-sky-500 border border-black border-r-4 border-b-4 p-6">
+                        <NuxtLink to="/about" class="text-white text-3xl focus-text bg-sky-500 border border-black border-r-4 border-b-4 p-6">
                             LEARN MORE...
                         </NuxtLink>
                     </div>

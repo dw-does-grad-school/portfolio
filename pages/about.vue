@@ -120,20 +120,24 @@ const about ={
         description: "I've been coding in JavaScript for almost 10 years, and have a strong grasp of the language, its ecosystem, but am still learning something new just about every day. In that time, I've built everything from simple websites using basic HTML, CSS, and JavaScript. To complex web and mobile applications using React, Vue, and derivatives of those frameworks."
       },
       {
-        title: "Python: Django, Flask",
+        title: "Backend Development: Python, Django, Flask; Java, Spring Boot, JVDB",
         description: "I've been coding in Python for about 7 years now, and have a strong grasp of the language, and the ecosystem of developers around it. I primarily use Python for academic programming in order to filter through data."
+      },
+      {
+        title: "Database: PostgreSQL, MySQL, MongoDB, Firebase/Supabase",
+        description:""
       },
       {
         title: "UX Design and UI Development",
         description: "I'm able to rapidly iterate on designs and develop them into functional, responsive, and accessible web applications."
       },
       {
-        title: "AWS and Cloud Services",
-        description: "I've been using AWS for about 6 years now, and have a strong grasp of the platform and its services. Though ironically, I'm just now getting certified in AWS Cloud Services."
-      },
-      {
         title: "Project Management",
         description: "I've practiced agile project management since 2016 and building the mypalate application in order to stay on track and meet deadlines."
+      },
+      {
+        title: "AWS and Cloud Services",
+        description: "I've been using AWS for about 6 years now, and have a strong grasp of the platform and its services. Though ironically, I'm just now getting certified in AWS Cloud Services."
       }
     ]
   },

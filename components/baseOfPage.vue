@@ -1,5 +1,5 @@
 <template>
-  <footer class="neo-footer">
+  <footer class="neo-footer bg-white">
     <div class="footer-container">
       <div class="social-links">
         <a href="https://www.linkedin.com/in/david-a-welsh/" target="_blank" aria-label="LinkedIn">
@@ -30,7 +30,6 @@ export default {
 
 <style scoped>
 .neo-footer {
-  background-color: #e0e0e0;
   padding: 2rem;
   border-top: 4px solid black;
   font-family: Arial, sans-serif;

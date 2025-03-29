@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white">
-        <header class="absolute top-0 left-0 right-0 z-10 mt-5 p-4 bg-base-100/80 backdrop-blur-sm shadow-md mx-4 rounded-xl">
+        <header>
             <div class="flex items-center justify-end w-full">
                 <Menu />
             </div>

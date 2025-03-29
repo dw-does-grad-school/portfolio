@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "name": "Project 1",
+            "description": "Description of Project 1",
+            "link": "#", 
+            "tags": ["tag1", "tag2", "tag3"]
+        },
+        {
+            "name": "Project 2",
+            "description": "Description of Project 2",
+            "link": "#",
+            "tags": ["tag4", "tag5", "tag6"]
+        },
+        {
+
+        }
+    ]
+}

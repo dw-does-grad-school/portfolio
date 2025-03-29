@@ -65,10 +65,16 @@ export default {
       // Maximum 6 projects
       projects: [
         {
-          name: "Project One",
+          name: "Rodger",
           image: "https://via.placeholder.com/600x400",
           link: "https://example.com/project-one",
-          skills: ["Vue", "Tailwind", "Nuxt"]
+          skills: ["Vue", "Supabase", "AI Integration"]
+        },
+        {
+          name: "Expense Tracker",
+          image: "https://via.placeholder.com/600x400",
+          link: "https://example.com/project-three",
+          skills: ["React", "Framer", "CSS"]
         },
         {
           name: "UI Design",
@@ -77,28 +83,16 @@ export default {
           skills: ["JavaScript", "Design", "CSS"]
         },
         {
-          name: "Project Three",
-          image: "https://via.placeholder.com/600x400",
-          link: "https://example.com/project-three",
-          skills: ["React", "Framer", "CSS"]
-        },
-        {
-          name: "Project Four",
-          image: "https://via.placeholder.com/600x400",
+          name: "Mypalate",
+          image: "http://github.com/dw-does-grad-school/static_images/blob/main/portfolio/mypalate.jpg0",
           link: "https://example.com/project-four",
           skills: ["GraphQL", "Apollo", "Express"]
         },
         {
-          name: "Project Five",
+          name: "Pokemon Cards",
           image: "https://via.placeholder.com/600x400",
           link: "https://example.com/project-five",
-          skills: ["Angular", "TypeScript", "RxJS"]
-        },
-        {
-          name: "Project Six",
-          image: "https://via.placeholder.com/600x400",
-          link: "https://example.com/project-six",
-          skills: ["Python", "Django", "REST"]
+          skills: ["Vue", "Nitro", "JavaScript"]
         }
       ]
     };

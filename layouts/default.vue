@@ -6,7 +6,7 @@
             </div>
         </header>
 
-        <main>
+        <main class="bg-white">
             <slot />
         </main>
         <footer>

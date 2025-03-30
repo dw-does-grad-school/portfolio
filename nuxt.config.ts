@@ -8,5 +8,12 @@ export default defineNuxtConfig({
   ], 
   build: {
     transpile: ['html2canvas']
+  },
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/dw_logo.png' }
+      ]
+    }
   }
 })

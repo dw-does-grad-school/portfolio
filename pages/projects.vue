@@ -1,6 +1,10 @@
 <template>
     <section class="mt-48">
-      <h1>Test</h1>
+      <div class="container mx-auto max-w-[80%] text-center">
+        <span>
+          These are the three most recent projects that I've worked on, or in the case of Rodger, am working on at the moment. Mypalate was included as the cornerstone project it will always be in my view, since it taught me so much during that time frame.
+        </span>
+      </div>
     </section>
 
     <section>

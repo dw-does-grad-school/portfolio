@@ -102,7 +102,8 @@ const about ={
           "I took a career break to learn about the healthcare sector, and to try to learn how to address the technological needs of the sector.",
           "I learned how to work within the needs of a multi-disciplinary team, and how to effectively.",
           "Stayed up to date with the latest advancements in web development and design, and mastered Next and Nuxt.js, Tailwind CSS, and TypeScript.",
-          "Continued to do work to advocate for neurodiverse individuals in the workplace, presenting on the subject at SXSW 2024."
+          "Continued to do work to advocate for neurodiverse individuals in the workplace, presenting on the subject at SXSW 2024.",
+          "Learn more by copying /nursing_addendum into your browser. It's a base level page and goes into more detail about my time in the medical field."
         ]
       },
       {

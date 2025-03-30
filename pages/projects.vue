@@ -3,7 +3,7 @@
 
     </section>
     <section>
-        <div>Finishing up the products feature right now, due date < 4/5/2025 depending on external factors.</div>
+        <div class="text-center text-sm font-bold">Finishing up the products feature right now, due date < 4/5/2025 depending on external factors.</div>
         <div class="container mx-auto p-4 sm:p-8">
         <h1 class="text-4xl font-bold mb-8 text-center sub-text">Projects</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">

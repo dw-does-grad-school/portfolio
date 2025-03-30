@@ -3,19 +3,20 @@
 
     </section>
     <section>
-        <div class="container mx-auto p-8">
+        <div>Finishing up the products feature right now, due date < 4/5/2025 depending on external factors.</div>
+        <div class="container mx-auto p-4 sm:p-8">
         <h1 class="text-4xl font-bold mb-8 text-center sub-text">Projects</h1>
-        <div class="grid grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
         <div
             v-for="(project, index) in projects"
             :key="project.name"
-            class="mb-8 emph-text"
+            class="mb-4 sm:mb-8 emph-text"
         >
             <!-- Image container with hover overlay limited to the image -->
             <div class="relative group">
                 <div
                 :style="{ backgroundImage: 'url(' + project.image + ')' }"
-                class="h-64 bg-cover bg-center border-4 border-black overflow-hidden transition-colors group-hover:border-pink-600"
+                class="h-48 sm:h-64 bg-cover bg-center border-4 border-black overflow-hidden transition-colors group-hover:border-pink-600"
                 >
                 <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-80 transition duration-300 flex items-center justify-center">
                     <a
@@ -28,19 +29,19 @@
                 </div>
             </div>
             <!-- Project title with ordering and hashtags -->
-            <div class="mt-4 flex justify-between items-center">
+            <div class="mt-4 flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-2 sm:space-y-0">
                 <div class="flex items-center space-x-2">
-                    <span class="text-2xl font-bold">
+                    <span class="text-xl sm:text-2xl font-bold">
                         {{ index + 1 }}.
                     </span>
                     <a
                     :href="project.link"
-                    class="text-2xl font-extrabold border-b-4 border-black inline-block transition-colors hover:text-gray-700"
+                    class="text-xl sm:text-2xl font-extrabold border-b-4 border-black inline-block transition-colors hover:text-gray-700"
                     >
                     {{ project.name }}
                     </a>
                 </div>
-                <div class="flex space-x-2">
+                <div class="flex flex-wrap gap-2">
                     <span
                     v-for="(tag, i) in project.skills"
                     :key="i"

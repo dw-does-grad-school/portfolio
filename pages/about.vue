@@ -221,6 +221,12 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.header-text {
+  font-family: 'Anton', sans-serif;
+}
+.sub-text{
+    font-family: 'Bebas Neue', sans-serif;
+}
 .animate-on-scroll {
     opacity: 0;
     transform: translateX(-20px);

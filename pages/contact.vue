@@ -45,10 +45,17 @@
           </div>
           <button
             type="submit"
-            class="bg-black hover:bg-white hover:text-black text-white font-bold uppercase py-2 px-4 border-2 border-black"
+            :disabled="loading"
+            class="bg-black hover:bg-white hover:text-black text-white font-bold uppercase py-2 px-4 border-2 border-black disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Send
+            {{ loading ? 'Sending...' : 'Send' }}
           </button>
+          <div v-if="error" class="text-red-500 mt-2">
+            {{ error }}
+          </div>
+          <div v-if="success" class="text-green-500 mt-2">
+            Message sent successfully!
+          </div>
         </form>
       </div>
       <!-- Contact Info -->
@@ -80,17 +87,42 @@ export default {
         name: "",
         email: "",
         message: ""
-      }
+      },
+      loading: false,
+      error: null,
+      success: false
     };
   },
   methods: {
-    submitForm() {
-      console.log("Form submitted:", this.form);
-      alert("Your message has been sent!");
-      // Reset the form fields
-      this.form.name = "";
-      this.form.email = "";
-      this.form.message = "";
+    async submitForm() {
+      this.loading = true;
+      this.error = null;
+      this.success = false;
+
+      try {
+        const response = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(this.form)
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to send message');
+        }
+
+        this.success = true;
+        // Reset the form fields
+        this.form.name = "";
+        this.form.email = "";
+        this.form.message = "";
+      } catch (error) {
+        this.error = 'Failed to send message. Please try again later.';
+        console.error('Error:', error);
+      } finally {
+        this.loading = false;
+      }
     }
   }
 };

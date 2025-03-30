@@ -37,23 +37,23 @@
 export default {
   data() {
     return {
-      project: "Finance Tracker",
-      status: "Finished but hestitant to deploy",
-      idea: "A simple finance tracker that allows you to track your income and expenses. It's a simple app that allows you to track your money, and to see where it's going. And was just complex enough to make learning Nuxt.js fun.",
+      project: "Three Code Tests",
+      status: "Deployed on Vercel",
+      idea: " I had to build three dummy apps on the fly and wanted to see how fast I could iterate through three different UI themes. This was about a day’s work in all.",
       tech_stack: [
-        " NuxtJs (and derivative libraries)",
-        "Supabase",
-        "Chart.js"
+        "Vanilla JS",
+        "Tailwind CSS",
+        "Vercel"
       ],
       challenges: [
-        "Like NextJs, Nuxt had a bit of a learning curve to it.", 
-        "Connecting to Supabase, and maintaining the data within it has been a hassle.", 
-        "Keeping this project live is a bit of a pain in the neck, as it requires constant feeding of data from the users to keep it functional.", 
-        "The connection with Supabase was suboptimal for this application, as there were instances where I had to continually refactor some of the code to keep the data displayed."
+        "Getting it built in < 6 total hours", 
+        "Determining which of the themes would be the most appropriate landing page", 
+        "The JS could refresh the cachè on refresh with the tic-tac-toe game, but that’s a minor detail in my opinion. "
       ],
       reflections: [
-        "Nuxt was impressive enough as a frontend framework for it to become my personal go-to.", 
-        "I want this to be live, but at the same time, it’s an extremely tedious project to maintain. Email me if you’d like to see this in action."
+        "This gave me an in-depth appreciation for Tailwind that I’d not previously had.", 
+        "It’s a more effective demonstration of my skills with UI design than this website, but that’s owing more to having a “be a simple developer, and let your code speak for itself” mindset than anything.", 
+        "Retrospectively, the contrast of this project and my personal site are examples of “tell me what to build and your most complicated idea will come to life, tell me to build for myself, and you’ll get the simplest idea, hopefully, executed well.”", 
       ]
     }
   }

@@ -37,23 +37,23 @@
 export default {
   data() {
     return {
-      project: "Finance Tracker",
-      status: "Finished but hestitant to deploy",
-      idea: "A simple finance tracker that allows you to track your income and expenses. It's a simple app that allows you to track your money, and to see where it's going. And was just complex enough to make learning Nuxt.js fun.",
+      project: "Mypalate",
+      status: "Permanently retired after more $ than I care to admit",
+      idea: "An application that allowed users to share recipes and connect with each other over food and the culture around it.",
       tech_stack: [
-        " NuxtJs (and derivative libraries)",
-        "Supabase",
-        "Chart.js"
+        "React Native (Expo)",
+        "Node.Js",
+        "MongoDb"
       ],
       challenges: [
-        "Like NextJs, Nuxt had a bit of a learning curve to it.", 
-        "Connecting to Supabase, and maintaining the data within it has been a hassle.", 
-        "Keeping this project live is a bit of a pain in the neck, as it requires constant feeding of data from the users to keep it functional.", 
-        "The connection with Supabase was suboptimal for this application, as there were instances where I had to continually refactor some of the code to keep the data displayed."
+        "Building the app was easy, running the business, that was the fun bit.", 
+        "Getting the code to accommodate the number of users was easy, paying for the data storage, at the time, was the difficult part. ", 
+        "Doing everything from estimating the costs/scale of the project, setting up the databases, and designing the UI would’ve been an amazing challenge to for an entire year, much less a summer.", 
+        "The final straw was the release of IOS 10, and the mounting costs of running a cash negative company on a college student’s budget. "
       ],
       reflections: [
-        "Nuxt was impressive enough as a frontend framework for it to become my personal go-to.", 
-        "I want this to be live, but at the same time, it’s an extremely tedious project to maintain. Email me if you’d like to see this in action."
+        "This was an amazing lesson in the economics of application development and deployment. Throw in the fact that I was 22 and a full time undergrad when it launched, and there’s a reason this is something of a traumatic experience in hindsight. ", 
+        "With all that said, retrospectively, it was an amazing experience. I learned how to build full-stack applications in a trial by fire. And while I definitely got burned, I’m glad I gave it my best shot. "
       ]
     }
   }

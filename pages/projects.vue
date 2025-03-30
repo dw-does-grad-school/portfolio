@@ -59,6 +59,7 @@
 
 <script>
 import threeTestsImg from '@/assets/three-tests.png';
+import inDev from '@/assets/in-dev.png';
 
 export default {
   data() {
@@ -67,34 +68,34 @@ export default {
       projects: [
         {
           name: "Rodger",
-          image: "https://via.placeholder.com/600x400",
-          link: "https://example.com/project-one",
+          image: inDev,
+          link: "/work/rodger",
           skills: ["Vue", "Supabase", "AI Integration"]
         },
         {
           name: "Expense Tracker",
           image: "https://via.placeholder.com/600x400",
-          link: "https://example.com/project-three",
-          skills: ["React", "Framer", "CSS"]
+          link: "/work/finance-tracker",
+          skills: ["Nuxt", "Supabase", "Chart.js"]
         },
         {
           name: "UI Design",
           image: threeTestsImg,
-          link: "https://three-tests.vercel.app/",
-          skills: ["JavaScript", "Design", "CSS"]
+          link: "/work/three-tests",
+          skills: ["JavaScript", "Tailwind", "UI Design"]
         },
         {
           name: "Mypalate",
           image: "http://github.com/dw-does-grad-school/static_images/blob/main/portfolio/mypalate.jpg0",
           link: "https://example.com/project-four",
-          skills: ["GraphQL", "Apollo", "Express"]
+          skills: ["React Native", "Node Js", "Mongo DB"]
         },
-        {
-          name: "Pokemon Cards",
-          image: "https://via.placeholder.com/600x400",
-          link: "https://example.com/project-five",
-          skills: ["Vue", "Nitro", "JavaScript"]
-        }
+        // {
+        //   name: "Pokemon Cards",
+        //   image: "https://via.placeholder.com/600x400",
+        //   link: "https://example.com/project-five",
+        //   skills: ["Vue", "Nitro", "JavaScript"]
+        // }
       ]
     };
   }

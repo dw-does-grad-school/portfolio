@@ -1,5 +1,5 @@
 <template> 
-    <div class="flex flex-col p-8 max-w-4xl mx-auto">
+    <div class="flex flex-col p-8 max-w-4xl mt-32 mx-auto">
         <div class="mb-8">
             <h1 class="text-3xl font-bold mb-2">{{ project }}</h1>
             <p class="text-gray-600">{{ status }}</p>

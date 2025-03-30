@@ -1,9 +1,9 @@
 <template>
-    <section class="mt-32">
-
+    <section class="mt-48">
+      <h1>Test</h1>
     </section>
+
     <section>
-        <div class="text-center text-sm font-bold">Finishing up the products feature right now, due date < 4/5/2025 depending on external factors.</div>
         <div class="container mx-auto p-4 sm:p-8">
         <h1 class="text-4xl font-bold mb-8 text-center sub-text">Projects</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
@@ -36,7 +36,7 @@
                     </span>
                     <a
                     :href="project.link"
-                    class="text-xl sm:text-2xl font-extrabold border-b-4 border-black inline-block transition-colors hover:text-gray-700"
+                    class="text-xl header-text sm:text-2xl font-extrabold border-b-4 border-black inline-block transition-colors hover:text-gray-700"
                     >
                     {{ project.name }}
                     </a>
@@ -58,29 +58,28 @@
 </template>
 
 <script>
-import threeTestsImg from '@/assets/three-tests.png';
-import inDev from '@/assets/in-dev.png';
+import { defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   data() {
     return {
       // Maximum 6 projects
       projects: [
         {
           name: "Rodger",
-          image: inDev,
+          image: '/assets/in-dev.png',
           link: "/work/rodger",
           skills: ["Vue", "Supabase", "AI Integration"]
         },
         {
-          name: "Expense Tracker",
+          name: "Finance Tracker",
           image: "https://via.placeholder.com/600x400",
-          link: "/work/finance-tracker",
+          link: "/work/finance_tracker",
           skills: ["Nuxt", "Supabase", "Chart.js"]
         },
         {
-          name: "UI Design",
-          image: threeTestsImg,
+          name: "Three Tests",
+          image: '/assets/three-tests.png',
           link: "/work/three-tests",
           skills: ["JavaScript", "Tailwind", "UI Design"]
         },
@@ -99,7 +98,7 @@ export default {
       ]
     };
   }
-};
+});
 </script>
 
 <style scoped>

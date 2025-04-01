@@ -17,7 +17,7 @@
 
 <script setup>
 useHead({
-    titleTemplate: 'David.Dev', 
+    titleTemplate: 'Portfolio of David Welsh: Software Engineer and UI Developer', 
     link: [
     {
       rel: 'preconnect',

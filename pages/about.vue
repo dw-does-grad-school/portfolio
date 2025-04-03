@@ -65,10 +65,14 @@ const sections = [
         year: 'Now',
         title: 'Graduate School and the Big Question',
         description: 'With the rise in AI, I knew the competitive landscape was changing for developers. I enrolled in a Master\'s program to learn more about the technology, and to understand how I could use it to benefit my community. I also started advising the nursing program I\'d worked with on how to teach their students how to most effectively utilize it as a tool. All the while beginning to build applications that incorporate AI into the user experience.'
-    }, {
+    }, 
+    {
         year: 'What\'s Next?',
         title: 'That is the question.',
         description: 'I\'m currently working on portfolio projects as I apply for jobs, which is probably tied to why you\'re reading this right now.'
+    }, 
+    {
+        description: 'BTW, I\'m extremely camera shy, which is why there aren\'t really any pictures of me on this site, with the one on the homepage being a doctored up one from a presentation I did at SXSW a year or so ago.'
     }
 ];
 

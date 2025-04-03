@@ -23,7 +23,7 @@
                     </p>
                     <div class="icons flex gap-6 items-center">
                         <a 
-                            href="https://www.linkedin.com/in/your-linkedin" 
+                            href="https://www.linkedin.com/in/david-a-welsh/" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="text-gray-700 hover:text-blue-600 transition-colors duration-300"
@@ -34,7 +34,7 @@
                         </a>
                         
                         <a 
-                            href="https://github.com/your-github" 
+                            href="https://github.com/dw-does-grad-school" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             class="text-gray-700 hover:text-gray-900 transition-colors duration-300"
@@ -70,10 +70,10 @@
 
 <script setup>
 import selfie from '@/assets/img/selfie.png';
+import resume from '@/assets/documents/Resume.pdf';
 
 const downloadResume = () => {
-    const resumeUrl = '/path-to-your-resume.pdf';
-    window.open(resumeUrl, '_blank');
+    window.open(resume, '_blank');
 }
 </script>
 

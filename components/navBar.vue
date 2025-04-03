@@ -4,15 +4,47 @@
             <div class="flex justify-between">
                 <!-- Logo/Brand -->
                 <div class="flex items-center">
-                    <a href="/" class="text-xl font-bold">Your Brand</a>
+                    <NuxtLink to="/" class="text-2xl font-bold text-sky-600 merriweather">David Welsh</NuxtLink>
                 </div>
 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="hover:underline">Home</a>
-                    <a href="/about" class="hover:underline">About</a>
-                    <a href="/projects" class="hover:underline">Projects</a>
-                    <a href="/contact" class="hover:underline">Contact</a>
+                    <NuxtLink 
+                        to="/" 
+                        :class="[
+                            'hover:underline transition-colors duration-300 roboto',
+                            $route.path === '/' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        Home
+                    </NuxtLink>
+                    <NuxtLink 
+                        to="/about" 
+                        :class="[
+                            'hover:underline transition-colors duration-300 roboto',
+                            $route.path === '/about' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        About
+                    </NuxtLink>
+                    <NuxtLink 
+                        to="/projects" 
+                        :class="[
+                            'hover:underline transition-colors duration-300 roboto',
+                            $route.path === '/projects' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        Projects
+                    </NuxtLink>
+                    <NuxtLink 
+                        to="/contact" 
+                        :class="[
+                            'hover:underline transition-colors duration-300 roboto',
+                            $route.path === '/contact' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        Contact
+                    </NuxtLink>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -29,10 +61,42 @@
             <!-- Mobile Navigation -->
             <div v-show="isOpen" class="md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="/" class="block py-2 hover:underline">Home</a>
-                    <a href="/about" class="block py-2 hover:underline">About</a>
-                    <a href="/projects" class="block py-2 hover:underline">Projects</a>
-                    <a href="/contact" class="block py-2 hover:underline">Contact</a>
+                    <NuxtLink 
+                        to="/" 
+                        :class="[
+                            'block py-2 hover:underline transition-colors duration-300',
+                            $route.path === '/' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        Home
+                    </NuxtLink>
+                    <NuxtLink 
+                        to="/about" 
+                        :class="[
+                            'block py-2 hover:underline transition-colors duration-300',
+                            $route.path === '/about' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        About
+                    </NuxtLink>
+                    <NuxtLink 
+                        to="/projects" 
+                        :class="[
+                            'block py-2 hover:underline transition-colors duration-300',
+                            $route.path === '/projects' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        Projects
+                    </NuxtLink>
+                    <NuxtLink 
+                        to="/contact" 
+                        :class="[
+                            'block py-2 hover:underline transition-colors duration-300',
+                            $route.path === '/contact' ? 'text-sky-600' : 'text-gray-700'
+                        ]"
+                    >
+                        Contact
+                    </NuxtLink>
                 </div>
             </div>
         </div>
@@ -45,5 +109,11 @@ const isOpen = ref(false)
 
 <style scoped>
 /* Add any custom styles here if needed */
+.merriweather {
+    font-family: 'Merriweather', serif;
+}
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
 </style>
 

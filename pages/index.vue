@@ -1,9 +1,8 @@
 <template>
-    <section class="mt-20">
-
-        <div class="min-h-screen flex">
-            <!-- Left side - Image -->
-            <div class="w-1/2 relative">
+    <section class="mt-0 md:mt-20">
+        <div class="min-h-screen flex flex-col md:flex-row">
+            <!-- Image Section -->
+            <div class="w-full md:w-1/2 h-[50vh] md:h-full relative">
                 <img 
                     :src="selfie" 
                     alt="David Welsh" 
@@ -12,13 +11,13 @@
                 <div class="absolute inset-0 bg-black/10"></div>
             </div>
 
-            <!-- Right side - Content -->
-            <div class="w-1/2 flex items-center justify-center px-16">
+            <!-- Content Section -->
+            <div class="w-full md:w-1/2 flex items-center justify-center px-8 md:px-16 py-12 md:py-0">
                 <div class="max-w-xl">
-                    <h1 class="text-5xl font-merriweather font-bold mb-6">
+                    <h1 class="text-4xl md:text-5xl font-merriweather font-bold mb-6">
                         Hi, I'm David,
                     </h1>
-                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
                         I'm a seasoned Full Stack Developer and AI Evangelist, with a passion for 
                         solving real world problems and using technology to improve people's lives. 
                     </p>

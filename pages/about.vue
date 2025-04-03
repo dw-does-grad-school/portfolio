@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen flex flex-col items-center justify-center bg-white">
+    <div class="min-h-screen flex flex-col items-center justify-center bg-zinc-50">
         <div class="h-[70vh] relative w-full max-w-4xl mx-auto">
             <section 
                 v-for="(section, index) in sections" 
@@ -12,7 +12,7 @@
                 }"
             >
                 <div class="h-full flex flex-col items-center justify-center text-center p-8">
-                    <h2 class="text-4xl font-merriweather mb-4">{{ section.year }}</h2>
+                    <h2 class="text-4xl merriweather mb-4">{{ section.year }}</h2>
                     <h3 class="text-2xl text-gray-700 mb-6">{{ section.title }}</h3>
                     <p class="text-lg text-gray-600 leading-relaxed">{{ section.description }}</p>
                 </div>
@@ -70,9 +70,6 @@ const sections = [
         year: 'What\'s Next?',
         title: 'That is the question.',
         description: 'I\'m currently working on portfolio projects as I apply for jobs, which is probably tied to why you\'re reading this right now.'
-    }, 
-    {
-        description: 'BTW, I\'m extremely camera shy, which is why there aren\'t really any pictures of me on this site, with the one on the homepage being a doctored up one from a presentation I did at SXSW a year or so ago.'
     }
 ];
 
@@ -95,6 +92,10 @@ const prevSection = () => {
 button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+.merriweather {
+    font-family: 'Merriweather', serif;
 }
 </style>
 
